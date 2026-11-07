@@ -1,0 +1,15 @@
+{
+	"name": "df-azureprojetfacktr",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cc2f2686-fe41-43cd-9152-bd96192703d3",
+		"tenantId": "0e012786-46aa-481d-9e75-fdad0dd45afa"
+	}
+}
