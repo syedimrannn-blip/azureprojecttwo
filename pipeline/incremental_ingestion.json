@@ -12,6 +12,7 @@
 						"value": "@pipeline().parameters.loop_input",
 						"type": "Expression"
 					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "AzureSQLtoLake",
@@ -225,7 +226,7 @@
 												{
 													"type": "Query",
 													"text": {
-														"value": "SELECT MAX(@{item().cdc_col} as cdc FROM @{item().scehma}.@{item().table}",
+														"value": "SELECT MAX(@{item().cdc_col} as cdc FROM @{item().schema}.@{item().table}",
 														"type": "Expression"
 													}
 												}
